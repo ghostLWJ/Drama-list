@@ -1,6 +1,5 @@
-<template>
-  <div id="app">
-  </div>
+<template lang="pug">
+  #app
 </template>
 
 <script>
@@ -11,5 +10,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+body
+  background: linear-gradient(135deg, #83458e 0%,#608dc9 100%)
+#app
+  text-align: center
 </style>
