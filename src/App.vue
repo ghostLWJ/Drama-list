@@ -11,7 +11,8 @@ import Dramas from './components/Dramas/Dramas'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Dramas
   },
   data () {
     return {
