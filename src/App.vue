@@ -29,6 +29,12 @@ export default {
       .catch ( (err) => {
         console.log (err);
       })
+  },
+  computed: {
+    filterDramas () {
+      return this.dramas.filter ( (drama) => drama.name.toLowerCase ().includes (this.search.toLowerCase ())
+      )
+    }
   }
 }
 </script>
