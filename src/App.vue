@@ -1,11 +1,20 @@
 <template lang="pug">
   #app
+    Header(v-model="search")
 </template>
 
 <script>
+import Header from './components/Header/Header'
+
 export default {
   name: 'App',
   components: {
+    Header
+  },
+  data () {
+    return {
+      search: ''
+    }
   }
 }
 </script>
