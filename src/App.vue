@@ -13,8 +13,22 @@ export default {
   },
   data () {
     return {
-      search: ''
+      search: '',
+      dramas: []
     }
+  },
+  created () {
+    const that = this;
+    this.$axios.get ('/api/dramas')
+      .then ( (res) => {
+        if (res.status === 200) {
+          const dataSource = res.data;
+          that.dramas = dataSource.data;
+        }
+      })
+      .catch ( (err) => {
+        console.log (err);
+      })
   }
 }
 </script>
