@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'drama';
+  src:  url('../fonts/drama.eot?eb6zra');
+  src:  url('../fonts/drama.eot?eb6zra#iefix') format('embedded-opentype'),
+    url('../fonts/drama.ttf?eb6zra') format('truetype'),
+    url('../fonts/drama.woff?eb6zra') format('woff'),
+    url('../fonts/drama.svg?eb6zra#drama') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'drama' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
