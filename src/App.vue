@@ -1,10 +1,12 @@
 <template lang="pug">
   #app
     Header(v-model="search")
+    Dramas(:dramas="filterDramas")
 </template>
 
 <script>
 import Header from './components/Header/Header'
+import Dramas from './components/Dramas/Dramas'
 
 export default {
   name: 'App',
